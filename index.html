@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Day Letter</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .envelope {
+            cursor: pointer;
+            font-size: 80px;
+            color: #e74c3c;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .letter {
+            display: none;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #fff0f5; /* Light pink background */
+            border: 2px solid #ff69b4;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .letter h2 {
+            text-align: center;
+            color: #ff69b4;
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .letter textarea {
+            width: 100%;
+            height: 400px;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ff69b4;
+            border-radius: 10px;
+            background-color: #fff;
+            resize: none;
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .letter textarea::placeholder {
+            color: #999;
+            font-style: italic;
+        }
+
+        .letter::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: #fff0f5;
+            border: 2px solid #ff69b4;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .letter::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: #fff0f5;
+            border: 2px solid #ff69b4;
+            border-radius: 50%;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="envelope" onclick="showLetter()">✉️</div>
+
+    <div class="letter" id="letter">
+        <h2>My Promise Day Letter</h2>
+        <textarea placeholder=" Happy **Promise Day**!  Since you’re stuck with me for life (and probably the next one too 😈), here’s a list of 25 unbreakable, chaotic, sweet, and sometimes evil promises I'll make to you! 😇😂
+                          
+        ---
+        1️⃣ I promise to steal your fries even when I have my own. 🍟 (Sharing is caring... but mostly stealing.)
+        2️⃣ I promise to always send you Billie reels at 3 AM. 🎶 (Sleep? Never heard of it.)
+        3️⃣ I promise to spam you with texts even when you ignore me. (No shanti for you! 😏)
+        4️⃣ I promise you that I'll always be the *shaitaan* of your life. 😈 (Your personal devil, at your service!)
+        5️⃣ I promise to be your unpaid therapist for a lifetime. (Fees: Food, duh! 🍕)
+        6️⃣ I promise to make random scenarios in my head and force you to listen. 📖 (And you *must* react appropriately!)
+        7️⃣ I promise to record your worst moments and use them as blackmail. � (Gotta keep some leverage!)
+        8️⃣ I promise to push you into awkward situations just for fun. 😂 (Social anxiety? What's that?)
+        9️⃣ I promise to send you memes that perfectly describe your life. 🤡 (Because laughing at your pain is my duty!)
+        🔟 I promise to always be your plus one for food adventures. 🍔 (Calories don’t count when you pay the bill.)
+        
+        1️⃣1️⃣ I promise to never let you feel lonely, even when you want to be. 🥰 (No escape, mwahaha!)
+        1️⃣2️⃣ I promise to always be dramatic with you, no matter the situation. 🎭 (Overreacting is my thing!)
+        1️⃣3️⃣ I promise to make dumb theories about people and situations with you. 🧐 (Just for stories)
+        1️⃣4️⃣ I promise to make stupid bets with you that make no sense. 🎰 (Loser buys food, even winner if its you!)
+        1️⃣5️⃣ I promise to drag you into my weird obsessions and fandoms. 📺 (No complaints allowed!)
+        1️⃣6️⃣ I promise to share my food with you (sometimes). 🍫 (On rare, generous occasions!)
+        1️⃣7️⃣ I promise to annoy you for a lifetime or even for the next life. ♾️ (Get used to me!)
+        1️⃣8️⃣ I promise to always find a way to annoy you. 👵 (I’ll be chaos for life!)
+        1️⃣9️⃣ I promise to always protect your peace, even from yourself. ☮️ (but, that includes me eating your peace!)
+        2️⃣0️⃣ I promise to always say “I told you so” when I’m right. 🤭 (Because I always am!)
+        
+        2️⃣1️⃣ I promise to be your partner-in-crime for every stupid idea. 🕵️‍♀️ (Or you can be mine!)
+        2️⃣2️⃣ I promise to fight with you, but never leave you.  (We argue, but you will never be spared!)
+        2️⃣3️⃣ I promise you will always be part of our **Billu Gang**. 🐱 (No escape from this gang, sorry!)
+        2️⃣4️⃣ I promise to you that I will always taunt you. 🎯 (Because what else I am for?)
+        2️⃣5️⃣ I promise that you are **doomed with me for life** and I am *never* leaving you... no matter how much you try. (Evil laugh! 😈)
+        
+        ---
+        
+        You're **stuck with me forever**, and there's no way out. 😘💀  Thanks for being my human diary, partner-in-chaos, and the person who puts up with my nonsense! Here’s to a lifetime of **teasing, overreacting, and unclimited khau.** 🥂💫
+        
+        Your forever **shaitaan**✨"></textarea>
+    </div>
+
+    <script>
+        function showLetter() {
+            document.getElementById('letter').style.display = 'block';
+            document.querySelector('.envelope').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
